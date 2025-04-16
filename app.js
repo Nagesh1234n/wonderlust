@@ -26,14 +26,14 @@ app.listen(8080, ()=>{
     console.log("server listening to the port 8080");
 });
 
-// app.get("/",(req, res)=>{
-//     res.send("hi i am root ok");
-// });
+app.get("/",(req, res)=>{
+    res.send("hi i am root ok");
+});
 // only for access listings
-app.get("/", async(req, res)=>{
-    const allListings = await Listing.find({});
-    res.render("listings/index.ejs",{allListings});
- });
+// app.get("/", async(req, res)=>{
+//     const allListings = await Listing.find({});
+//     res.render("listings/index.ejs",{allListings});
+//  });
 // app.get("/testListings", async(req, res) =>{
 //     let sampleListing = new Listing({
 //         title: "my New villa",
