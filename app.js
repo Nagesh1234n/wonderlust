@@ -27,7 +27,7 @@ app.listen(8080, ()=>{
 });
 
 app.get("/",(req, res)=>{
-    res.send("hi i am root and added this for cummit");
+    res.send("hi i am root ok");
 });
 // app.get("/testListings", async(req, res) =>{
 //     let sampleListing = new Listing({
